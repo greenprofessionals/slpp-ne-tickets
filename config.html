@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Configuration — SLPP New England Chapter</title>
+<meta name="description" content="Update the event's branding, ticket tiers, and chapter list — this feeds directly into every ticket the system generates.">
+<link rel="canonical" href="https://greenprofessionals.github.io/slpp-ne-tickets/config.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://greenprofessionals.github.io/slpp-ne-tickets/config.html">
+<meta property="og:site_name" content="SLPP New England Chapter">
+<meta property="og:title" content="Event Configuration — SLPP New England Chapter">
+<meta property="og:description" content="Update the event's branding, ticket tiers, and chapter list — this feeds directly into every ticket the system generates.">
+<meta property="og:image" content="https://greenprofessionals.github.io/slpp-ne-tickets/images/config-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="SLPP New England Chapter — Event Configuration">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Event Configuration — SLPP New England Chapter">
+<meta name="twitter:description" content="Update the event's branding, ticket tiers, and chapter list — this feeds directly into every ticket the system generates.">
+<meta name="twitter:image" content="https://greenprofessionals.github.io/slpp-ne-tickets/images/config-og.jpg">
+<meta name="twitter:image:alt" content="SLPP New England Chapter — Event Configuration">
+
+<style>
+  :root{
+    --green:#0b3d24; --green-deep:#082c19; --gold:#c9a24b; --gold-light:#e8d39a; --cream:#faf7ef; --ink:#1b1b1b;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; font-family:'Segoe UI',system-ui,-apple-system,sans-serif; background:var(--green-deep); color:var(--cream); min-height:100vh; }
+  header{ text-align:center; padding:40px 20px 24px; border-bottom:2px solid var(--gold); background:#062015; }
+  header .eyebrow{ letter-spacing:.18em; font-size:12px; color:var(--gold-light); text-transform:uppercase; }
+  header h1{ margin:8px 0 4px; font-size:clamp(22px,4vw,32px); color:#fff; }
+  header p{ margin:0; color:rgba(250,247,239,.75); font-size:14px; }
+  main{ max-width:600px; margin:0 auto; padding:32px 20px 60px; }
+  .card{ background:var(--cream); color:var(--ink); border-radius:14px; padding:32px 28px; box-shadow:0 20px 50px rgba(0,0,0,.35); }
+  .card h2{ margin-top:0; font-size:19px; color:var(--green); }
+  .card p{ font-size:15px; line-height:1.6; color:#333; }
+  ul.what-it-does{ margin:16px 0; padding-left:20px; }
+  ul.what-it-does li{ font-size:14px; line-height:1.7; color:#333; }
+  .note{ background:#fbf3de; border:1px solid var(--gold); border-radius:8px; padding:14px 16px; font-size:13px; color:#5c4a1a; margin:20px 0; }
+  a.open-form-btn{
+    display:block; text-align:center; margin-top:24px; padding:16px; border-radius:8px;
+    background:var(--green); color:#fff; font-size:16px; font-weight:700; text-decoration:none;
+  }
+  a.open-form-btn:hover{ background:var(--green-deep); }
+  a.open-form-btn .arrow{ margin-left:6px; }
+  .fine-print{ text-align:center; font-size:12px; color:#8a8a8a; margin-top:14px; }
+  footer{ text-align:center; padding:24px 20px 40px; font-size:12px; color:rgba(250,247,239,.55); }
+
+  .upload-box{margin-top:24px;padding:18px;border:1px solid #c9a24b;border-radius:10px;background:#fffdf7;}
+  .upload-box label{display:block;font-size:13px;font-weight:700;color:#0b3d24;margin:10px 0 6px;}
+  .upload-box input{width:100%;padding:11px;border:1px solid #d8d2c2;border-radius:8px;background:#fff;font-size:14px;}
+  .upload-btn{width:100%;margin-top:12px;padding:13px;border:0;border-radius:8px;background:#0b3d24;color:white;font-weight:700;font-size:15px;cursor:pointer;}
+  .upload-status{display:none;margin-top:10px;padding:10px;border-radius:8px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">SLPP North America · New England Chapter</div>
+  <h1>Event Configuration</h1>
+  <p>Set the branding, pricing, and details that power every ticket.</p>
+</header>
+
+<main>
+  <div class="card">
+    <h2>What this form actually controls</h2>
+    <p>This is the single source of truth for the whole ticketing system. Whatever's submitted here becomes the live configuration immediately — no code changes, no redeploying, nothing else to touch.</p>
+
+    <ul class="what-it-does">
+      <li><strong>Event branding</strong> — organization name, chapter name, event title, tagline, date, time, venue, dress code, contact info, and website link</li>
+      <li><strong>Ticket tiers</strong> — up to 5 tiers, each with its own name and price (Single, Patron, Double, or anything else this event needs)</li>
+      <li><strong>Chapters or groups</strong> — the full list guests choose from, or turned off entirely if this event doesn't need that concept</li>
+      <li><strong>Logo &amp; background image</strong> — upload directly in the form; both appear automatically on every generated ticket</li>
+    </ul>
+
+    <div class="note">
+      Submitting this form again later doesn't create a duplicate configuration — the most recent submission always wins, so updating the event just means filling it out again with the new details.
+    </div>
+
+    <a class="open-form-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeSPAhameZ5ErpuqHOssX-dyDNZkUjLIg1gUipJ9gWfj5Om1g/viewform?usp=sharing&ouid=112161599582399965600" target="_blank" rel="noopener">
+      Open Configuration Form <span class="arrow">→</span>
+    </a>
+    <p class="fine-print">Opens in a new tab. Takes about 5 minutes to complete.</p>
+
+    <div class="upload-box">
+      <h2 style="margin-bottom:6px;">Optional Logo Upload</h2>
+      <p style="margin-top:0;font-size:13px;">Upload the chapter or event logo here. It will appear at the top-left of every ticket and as the large faint watermark in the ticket background.</p>
+      <label for="logoAdminPasscode">Admin passcode</label>
+      <input type="password" id="logoAdminPasscode" autocomplete="off" placeholder="Enter admin passcode">
+      <label for="logoFile">Logo image</label>
+      <input type="file" id="logoFile" accept="image/png,image/jpeg,image/webp">
+      <button type="button" class="upload-btn" id="uploadLogoBtn">Upload Logo</button>
+      <div class="upload-status" id="logoUploadStatus"></div>
+    </div>
+  </div>
+</main>
+
+<footer>SLPP North America — New England Chapter</footer>
+
+
+<script>
+const CONFIG_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxcfrPorclAPXv0vCg0hBjxiWR8yUq43Hfhegrmt_HnX2otsvjMx1h9-JFYRCQ2qau2/exec';
+const uploadLogoBtn = document.getElementById('uploadLogoBtn');
+const logoUploadStatus = document.getElementById('logoUploadStatus');
+
+function setLogoStatus(message, ok) {
+  logoUploadStatus.textContent = message;
+  logoUploadStatus.style.display = 'block';
+  logoUploadStatus.style.background = ok ? '#eaf6ea' : '#fdeaea';
+  logoUploadStatus.style.color = ok ? '#155724' : '#8a1f1f';
+}
+
+uploadLogoBtn.addEventListener('click', async () => {
+  const passcode = document.getElementById('logoAdminPasscode').value.trim();
+  const file = document.getElementById('logoFile').files[0];
+  if (!passcode) { setLogoStatus('Enter the admin passcode.', false); return; }
+  if (!file) { setLogoStatus('Choose a logo image first.', false); return; }
+  if (!/^image\/(png|jpeg|webp)$/i.test(file.type)) { setLogoStatus('Use a PNG, JPG/JPEG, or WebP image.', false); return; }
+  if (file.size > 2 * 1024 * 1024) { setLogoStatus('Logo must be smaller than 2 MB.', false); return; }
+
+  uploadLogoBtn.disabled = true;
+  uploadLogoBtn.textContent = 'Uploading…';
+  try {
+    const dataUrl = await new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+    const res = await fetch(CONFIG_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ action: 'uploadLogo', adminPasscode: passcode, fileName: file.name, dataUrl })
+    });
+    const data = await res.json();
+    if (!data.ok) { setLogoStatus(data.error || 'Logo upload failed.', false); return; }
+    setLogoStatus('✅ Logo uploaded. New tickets will use it automatically as the logo and watermark.', true);
+  } catch (e) {
+    setLogoStatus('Could not reach the ticket server. Make sure the latest Apps Script deployment is live.', false);
+  } finally {
+    uploadLogoBtn.disabled = false;
+    uploadLogoBtn.textContent = 'Upload Logo';
+  }
+});
+</script>
+
+</body>
+</html>
